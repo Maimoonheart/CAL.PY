@@ -156,64 +156,66 @@
 
     # MULTIPLICATION TABLE
 
-# user = int(input('Input the number you want to be supplied with tthe multiplication table: '))
-# table = range(1,12)
-# for x in table:
-#     result = user * x
-#     print(user , '*', x , '=', result  )
+user = int(input('Input the number you want to be supplied with the multiplication table: '))
+table = range(1,13)
+for x in table:
+    result = user * x
+    print(user , '*', x , '=', result  )
 
-class Calculator:
-    def __init__(self) -> None:
-        self.name = 'Casio'
+# class Calculator:
+#     def __init__(self) -> None:
+#         self.name = 'Casio'
          
-        self.home()
+#         self.home()
 
-    def home(self):
-        print('Welcome to',self.name)
-        self.val1 = float(input('First value: '))
-        self.val2 = float(input('Second value: '))
-        user = input ('''
-           What operation would you like to perform?
-           1.Addition
-           2.Subtraction
-           3.Multiplication
-           4.Division
-           *.Exit
-        Option: ''') 
+#     def home(self):
+#         print('Welcome to',self.name)
+#         self.val1 = float(input('First value: '))
+#         self.val2 = float(input('Second value: '))
+#         user = input ('''
+#            What operation would you like to perform?
+#            1.Addition
+#            2.Subtraction
+#            3.Multiplication
+#            4.Division
+#            *.Exit
+#         Option: ''') 
         
-        if user == '1':
-            self.addition()
-        elif user == '2':
-            self.subtraction()
-        elif user == '3':
-            self.multiplication()
-        elif user == '4': 
-            self.division()    
-        elif user == '#':
-            exit()
-        else:
-            print('Invalid option,Try again')
-            self.home()
+        # if user == '1':
+        #     self.addition()
+        # elif user == '2':
+        #     self.subtraction()
+        # elif user == '3':
+        #     self.multiplication()
+        # elif user == '4': 
+        #     self.division()    
+#         elif user == '#':
+#             exit()
+#         else:
+#             print('Invalid option,Try again')
+#             self.home()
 
-    def addition(self):
-        print(f"Ans:{self.val1 + self.val2}")
-        self.decide()
-    def subtraction(self):
-        print(f"Ans:{self.val1 - self.val2}")
-        self.decide()
-    def multiplication(self):
-        print(f"Ans:{self.val1 * self.val2}")
-        self.decide()
-    def division(self):
-        print(f"Ans:{self.val1 / self.val2}")
-        self.decide()
-    def decide(self):
-        user = input('Press 1 to go back to home or # to exit: ')
-        if user == '1':
-            self.home()
-        else:
-            exit()
-casio = Calculator()
+#     def addition(self):
+#         print(f"Ans:{self.val1 + self.val2}")
+#         self.decide()
+#     def subtraction(self):
+#         print(f"Ans:{self.val1 - self.val2}")
+#         self.decide()
+#     def multiplication(self):
+#         print(f"Ans:{self.val1 * self.val2}")
+#         self.decide()
+#     def division(self):
+#         print(f"Ans:{self.val1 / self.val2}")
+#         self.decide()
+#     def decide(self):
+#         user = input('Press 1 to go back to home or # to exit: ')
+#         if user == '1':
+#             self.home()
+#         else:
+#             exit()
+# casio = Calculator()
+
+# .....
 # casio.home()
 # print(casio.name)
 # print(type(casio))
